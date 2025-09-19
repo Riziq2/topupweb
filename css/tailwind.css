@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #00D9FF; /* electric-blue */
+  --color-primary-50: #E6F9FF; /* electric-blue-50 */
+  --color-primary-100: #CCF3FF; /* electric-blue-100 */
+  --color-primary-200: #99E7FF; /* electric-blue-200 */
+  --color-primary-300: #66DBFF; /* electric-blue-300 */
+  --color-primary-400: #33CFFF; /* electric-blue-400 */
+  --color-primary-500: #00D9FF; /* electric-blue-500 */
+  --color-primary-600: #00AED9; /* electric-blue-600 */
+  --color-primary-700: #0082B3; /* electric-blue-700 */
+  --color-primary-800: #00568C; /* electric-blue-800 */
+  --color-primary-900: #002A66; /* electric-blue-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #1A1A2E; /* deep-gaming-bg */
+  --color-secondary-50: #F2F2F5; /* deep-gaming-bg-50 */
+  --color-secondary-100: #E6E6EB; /* deep-gaming-bg-100 */
+  --color-secondary-200: #CCCCDB; /* deep-gaming-bg-200 */
+  --color-secondary-300: #B3B3CB; /* deep-gaming-bg-300 */
+  --color-secondary-400: #9999BB; /* deep-gaming-bg-400 */
+  --color-secondary-500: #808099; /* deep-gaming-bg-500 */
+  --color-secondary-600: #666677; /* deep-gaming-bg-600 */
+  --color-secondary-700: #4D4D55; /* deep-gaming-bg-700 */
+  --color-secondary-800: #333344; /* deep-gaming-bg-800 */
+  --color-secondary-900: #1A1A2E; /* deep-gaming-bg-900 */
+
+  /* Accent Colors */
+  --color-accent: #00FF88; /* neon-green */
+  --color-accent-50: #E6FFF4; /* neon-green-50 */
+  --color-accent-100: #CCFFE9; /* neon-green-100 */
+  --color-accent-200: #99FFD4; /* neon-green-200 */
+  --color-accent-300: #66FFBE; /* neon-green-300 */
+  --color-accent-400: #33FFA9; /* neon-green-400 */
+  --color-accent-500: #00FF88; /* neon-green-500 */
+  --color-accent-600: #00D973; /* neon-green-600 */
+  --color-accent-700: #00B35E; /* neon-green-700 */
+  --color-accent-800: #008C49; /* neon-green-800 */
+  --color-accent-900: #006634; /* neon-green-900 */
+
+  /* Background Colors */
+  --color-background: #0F0F23; /* dark-gaming-canvas */
+  --color-background-50: #F1F1F5; /* dark-gaming-canvas-50 */
+  --color-background-100: #E3E3EB; /* dark-gaming-canvas-100 */
+  --color-background-200: #C7C7D7; /* dark-gaming-canvas-200 */
+  --color-background-300: #ABABC3; /* dark-gaming-canvas-300 */
+  --color-background-400: #8F8FAF; /* dark-gaming-canvas-400 */
+  --color-background-500: #73739B; /* dark-gaming-canvas-500 */
+  --color-background-600: #575787; /* dark-gaming-canvas-600 */
+  --color-background-700: #3B3B73; /* dark-gaming-canvas-700 */
+  --color-background-800: #1F1F5F; /* dark-gaming-canvas-800 */
+  --color-background-900: #0F0F23; /* dark-gaming-canvas-900 */
+
+  /* Surface Colors */
+  --color-surface: #16213E; /* card-separation */
+  --color-surface-50: #F2F4F7; /* card-separation-50 */
+  --color-surface-100: #E5E9F0; /* card-separation-100 */
+  --color-surface-200: #CBD3E0; /* card-separation-200 */
+  --color-surface-300: #B1BDD1; /* card-separation-300 */
+  --color-surface-400: #97A7C1; /* card-separation-400 */
+  --color-surface-500: #7D91B2; /* card-separation-500 */
+  --color-surface-600: #637BA2; /* card-separation-600 */
+  --color-surface-700: #496593; /* card-separation-700 */
+  --color-surface-800: #2F4F83; /* card-separation-800 */
+  --color-surface-900: #16213E; /* card-separation-900 */
+
+  /* Text Colors */
+  --color-text-primary: #FFFFFF; /* white */
+  --color-text-secondary: #B8BCC8; /* gray-400 */
+
+  /* Status Colors */
+  --color-success: #00FF88; /* neon-green */
+  --color-warning: #FF6B35; /* orange-500 */
+  --color-error: #FF4757; /* red-500 */
+
+  /* Gaming Shadows */
+  --shadow-cta: 0 4px 20px rgba(0, 217, 255, 0.3);
+  --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+  /* Gaming Borders */
+  --border-field: 1px solid rgba(0, 217, 255, 0.3);
+  --border-cta: 2px solid #00FF88;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-cta {
+    @apply font-rajdhani font-bold px-6 py-3 rounded-lg transition-all duration-250 ease-in-out;
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    border: var(--border-cta);
+    box-shadow: var(--shadow-cta);
+  }
+
+  .btn-cta:hover {
+    @apply transform scale-105;
+    box-shadow: 0 6px 25px rgba(0, 255, 136, 0.4);
+  }
+
+  .card-gaming {
+    background-color: var(--color-surface);
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    box-shadow: var(--shadow-card);
+    @apply rounded-lg p-6 transition-all duration-300 ease-in-out;
+  }
+
+  .card-gaming:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.2);
+  }
+
+  .text-gaming-accent {
+    font-family: 'Exo 2', sans-serif;
+    color: var(--color-accent);
+  }
+
+  .form-field {
+    @apply bg-transparent rounded-lg px-4 py-3 text-white placeholder-gray-400 transition-all duration-250 ease-in-out;
+    border: var(--border-field);
+  }
+
+  .form-field:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(0, 217, 255, 0.2);
+  }
+}

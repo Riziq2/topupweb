@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameTopUp Pro - Top-Up Game Credits Instantly</title>
+    <meta name="description" content="Top-up game credits instantly with guaranteed delivery in under 5 minutes. No registration required - order via WhatsApp now!" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <style>
+        .particle-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+        
+        .particle {
+            position: absolute;
+            background: #00D9FF;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .particle:nth-child(odd) {
+            background: #00FF88;
+            animation-delay: -2s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0F0F23 0%, #1A1A2E 50%, #16213E 100%);
+        }
+        
+        .testimonial-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-tab.active {
+            background: linear-gradient(135deg, #00D9FF, #00FF88);
+            color: #0F0F23;
+        }
+        
+        .sticky-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        .counter-animation {
+            animation: countUp 2s ease-out;
+        }
+        
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgametopup1689back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Hero Section with Particle Background -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
+        <div class="particle-bg">
+            <div class="particle" style="left: 10%; top: 20%; width: 4px; height: 4px; animation-delay: 0s;"></div>
+            <div class="particle" style="left: 20%; top: 80%; width: 6px; height: 6px; animation-delay: -1s;"></div>
+            <div class="particle" style="left: 60%; top: 30%; width: 3px; height: 3px; animation-delay: -2s;"></div>
+            <div class="particle" style="left: 80%; top: 70%; width: 5px; height: 5px; animation-delay: -3s;"></div>
+            <div class="particle" style="left: 30%; top: 10%; width: 4px; height: 4px; animation-delay: -4s;"></div>
+            <div class="particle" style="left: 70%; top: 90%; width: 6px; height: 6px; animation-delay: -5s;"></div>
+        </div>
+        
+        <div class="relative z-10 container mx-auto px-4 text-center">
+            <h1 class="font-orbitron font-black text-4xl md:text-6xl lg:text-7xl mb-6 text-white" data-aos="fade-up">
+                Top-Up Game Credits
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Instantly</span>
+            </h1>
+            
+            <p class="font-inter text-lg md:text-xl lg:text-2xl mb-8 text-text-secondary max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Guaranteed delivery in under 5 minutes - No registration required, just order and play!
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://wa.me/6281234567890?text=Halo%20GameTopUp%20Pro%2C%20saya%20ingin%20top-up%20game%20credits" class="btn-cta text-lg px-8 py-4 inline-flex items-center justify-center gap-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-6 h-6" />
+                    Order via WhatsApp Now
+                </a>
+                <a href="#pricing" class="font-rajdhani font-bold px-8 py-4 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-background transition-all duration-250">
+                    View Pricing
+                </a>
+            </div>
+            
+            <!-- Trust Bar -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="600">
+                <div class="text-center">
+                    <div class="text-3xl font-orbitron font-bold text-accent counter-animation">50,000+</div>
+                    <div class="text-text-secondary">Happy Gamers Served</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-orbitron font-bold text-accent counter-animation">99.9%</div>
+                    <div class="text-text-secondary">Successful Delivery Rate</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-orbitron font-bold text-accent counter-animation">< 5 Min</div>
+                    <div class="text-text-secondary">Average Delivery Time</div>
+                </div>
+            </div>
+            
+            <!-- Payment Methods -->
+            <div class="flex justify-center items-center gap-4 mt-8 flex-wrap" data-aos="fade-up" data-aos-delay="800">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=60&h=40&fit=crop" alt="GoPay" class="h-8 opacity-80 hover:opacity-100 transition-opacity" />
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=60&h=40&fit=crop" alt="OVO" class="h-8 opacity-80 hover:opacity-100 transition-opacity" />
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=60&h=40&fit=crop" alt="DANA" class="h-8 opacity-80 hover:opacity-100 transition-opacity" />
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=60&h=40&fit=crop" alt="Bank Transfer" class="h-8 opacity-80 hover:opacity-100 transition-opacity" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-20 bg-secondary">
+        <div class="container mx-auto px-4">
+            <h2 class="font-orbitron font-bold text-3xl md:text-4xl text-center mb-16" data-aos="fade-up">
+                Tired of <span class="text-error">Slow</span> and <span class="text-error">Unreliable</span> Top-Up Services?
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6" data-aos="fade-right">
+                    <div class="card-gaming">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 bg-error rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-orbitron font-bold text-xl">Competitor Services</h3>
+                        </div>
+                        <ul class="space-y-3 text-text-secondary">
+                            <li class="flex items-center gap-2">
+                                <span class="text-error">✗</span> Delivery takes 2-24 hours
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-error">✗</span> Complicated registration process
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-error">✗</span> No customer support
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-error">✗</span> Higher prices
+                            </li>
+                        </ul>
+                        <div class="mt-4 bg-error bg-opacity-20 rounded-lg p-3">
+                            <div class="text-sm text-error">Average delivery time: 4-6 hours</div>
+                            <div class="w-full bg-error bg-opacity-30 rounded-full h-2 mt-2">
+                                <div class="bg-error h-2 rounded-full w-3/4 animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6" data-aos="fade-left">
+                    <div class="card-gaming border-accent">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-background" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-orbitron font-bold text-xl text-accent">GameTopUp Pro</h3>
+                        </div>
+                        <ul class="space-y-3 text-text-secondary">
+                            <li class="flex items-center gap-2">
+                                <span class="text-accent">✓</span> Instant delivery under 5 minutes
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-accent">✓</span> No registration required
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-accent">✓</span> 24/7 WhatsApp support
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-accent">✓</span> Best prices guaranteed
+                            </li>
+                        </ul>
+                        <div class="mt-4 bg-accent bg-opacity-20 rounded-lg p-3">
+                            <div class="text-sm text-accent">Average delivery time: 2-5 minutes</div>
+                            <div class="w-full bg-accent bg-opacity-30 rounded-full h-2 mt-2">
+                                <div class="bg-accent h-2 rounded-full w-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Benefits -->
+    <section id="benefits" class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <h2 class="font-orbitron font-bold text-3xl md:text-4xl text-center mb-16" data-aos="fade-up">
+                Why Choose <span class="text-accent">GameTopUp Pro</span>?
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-gaming text-center group hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:animate-pulse">
+                        <svg class="w-8 h-8 text-background" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-orbitron font-bold text-xl mb-4">Instant Delivery</h3>
+                    <p class="text-text-secondary">Get your game credits in under 5 minutes, guaranteed. No more waiting hours for your top-up.</p>
+                </div>
+                
+                <div class="card-gaming text-center group hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:animate-pulse">
+                        <svg class="w-8 h-8 text-background" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-orbitron font-bold text-xl mb-4">Secure Payments</h3>
+                    <p class="text-text-secondary">All transactions are protected with bank-level security. Your payment information is always safe.</p>
+                </div>
+                
+                <div class="card-gaming text-center group hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:animate-pulse">
+                        <svg class="w-8 h-8 text-background" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-orbitron font-bold text-xl mb-4">24/7 Support</h3>
+                    <p class="text-text-secondary">Our customer support team is available round the clock via WhatsApp to help you anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Pricing Tables -->
+    <section id="pricing" class="py-20 bg-surface">
+        <div class="container mx-auto px-4">
+            <h2 class="font-orbitron font-bold text-3xl md:text-4xl text-center mb-16" data-aos="fade-up">
+                Choose Your <span class="text-primary">Top-Up Package</span>
+            </h2>
+            
+            <!-- Category Tabs -->
+            <div class="flex justify-center mb-12" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-secondary rounded-lg p-1 inline-flex">
+                    <button class="pricing-tab active px-6 py-3 rounded-lg font-rajdhani font-bold transition-all duration-250" onclick="switchCategory('game-credits')">
+                        Game Credits
+                    </button>
+                    <button class="pricing-tab px-6 py-3 rounded-lg font-rajdhani font-bold transition-all duration-250 text-text-secondary" onclick="switchCategory('mobile-pulsa')">
+                        Mobile Pulsa
+                    </button>
+                    <button class="pricing-tab px-6 py-3 rounded-lg font-rajdhani font-bold transition-all duration-250 text-text-secondary" onclick="switchCategory('digital-vouchers')">
+                        Digital Vouchers
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Game Credits Category -->
+            <div id="game-credits" class="pricing-category">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card-gaming hover:border-primary transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=80&h=80&fit=crop&crop=center" alt="Mobile Legends" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+                            <h3 class="font-orbitron font-bold text-xl">Mobile Legends</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>86 Diamonds</span>
+                                <span class="text-accent font-bold">Rp 20.000</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>172 Diamonds</span>
+                                <span class="text-accent font-bold">Rp 40.000</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>257 Diamonds</span>
+                                <span class="text-accent font-bold">Rp 60.000</span>
+                            </div>
+                        </div>
+                        <button class="w-full mt-6 btn-cta" onclick="selectGame('Mobile Legends')">
+                            Select Package
+                        </button>
+                    </div>
+                    
+                    <div class="card-gaming hover:border-primary transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=80&h=80&fit=crop&crop=center" alt="PUBG Mobile" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+                            <h3 class="font-orbitron font-bold text-xl">PUBG Mobile</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>60 UC</span>
+                                <span class="text-accent font-bold">Rp 15.000</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>325 UC</span>
+                                <span class="text-accent font-bold">Rp 75.000</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>660 UC</span>
+                                <span class="text-accent font-bold">Rp 150.000</span>
+                            </div>
+                        </div>
+                        <button class="w-full mt-6 btn-cta" onclick="selectGame('PUBG Mobile')">
+                            Select Package
+                        </button>
+                    </div>
+                    
+                    <div class="card-gaming hover:border-primary transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=80&h=80&fit=crop&crop=center" alt="Free Fire" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+                            <h3 class="font-orbitron font-bold text-xl">Free Fire</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>70 Diamonds</span>
+                                <span class="text-accent font-bold">Rp 10.000</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>355 Diamonds</span>
+                                <span class="text-accent font-bold">Rp 50.000</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>720 Diamonds</span>
+                                <span class="text-accent font-bold">Rp 100.000</span>
+                            </div>
+                        </div>
+                        <button class="w-full mt-6 btn-cta" onclick="selectGame('Free Fire')">
+                            Select Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Pulsa Category (Hidden by default) -->
+            <div id="mobile-pulsa" class="pricing-category hidden">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card-gaming hover:border-primary transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=80&h=80&fit=crop&crop=center" alt="Telkomsel" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+                            <h3 class="font-orbitron font-bold text-xl">Telkomsel</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>Rp 25.000</span>
+                                <span class="text-accent font-bold">Rp 25.500</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>Rp 50.000</span>
+                                <span class="text-accent font-bold">Rp 50.500</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>Rp 100.000</span>
+                                <span class="text-accent font-bold">Rp 100.500</span>
+                            </div>
+                        </div>
+                        <button class="w-full mt-6 btn-cta" onclick="selectGame('Telkomsel Pulsa')">
+                            Select Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Digital Vouchers Category (Hidden by default) -->
+            <div id="digital-vouchers" class="pricing-category hidden">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card-gaming hover:border-primary transition-all duration-300">
+                        <div class="text-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=80&h=80&fit=crop&crop=center" alt="Google Play" class="w-16 h-16 rounded-lg mx-auto mb-4" />
+                            <h3 class="font-orbitron font-bold text-xl">Google Play</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>Rp 50.000</span>
+                                <span class="text-accent font-bold">Rp 52.000</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>Rp 100.000</span>
+                                <span class="text-accent font-bold">Rp 102.000</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-background rounded-lg">
+                                <span>Rp 200.000</span>
+                                <span class="text-accent font-bold">Rp 204.000</span>
+                            </div>
+                        </div>
+                        <button class="w-full mt-6 btn-cta" onclick="selectGame('Google Play Voucher')">
+                            Select Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Testimonials -->
+    <section id="testimonials" class="py-20 bg-secondary">
+        <div class="container mx-auto px-4">
+            <h2 class="font-orbitron font-bold text-3xl md:text-4xl text-center mb-16" data-aos="fade-up">
+                What Our <span class="text-accent">Gamers</span> Say
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card card-gaming" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Andi Pratama" class="w-12 h-12 rounded-full" />
+                        <div>
+                            <h4 class="font-orbitron font-bold">Andi Pratama</h4>
+                            <div class="flex text-accent">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary">"Paling cepat! Baru order langsung masuk diamonds ML nya. Gak pake ribet daftar-daftar segala. Recommended banget!"</p>
+                </div>
+                
+                <div class="testimonial-card card-gaming" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" alt="Sari Dewi" class="w-12 h-12 rounded-full" />
+                        <div>
+                            <h4 class="font-orbitron font-bold">Sari Dewi</h4>
+                            <div class="flex text-accent">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary">"Udah langganan di sini. Harga murah, pelayanan ramah, dan yang penting aman. Gak pernah kecewa!"</p>
+                </div>
+                
+                <div class="testimonial-card card-gaming" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Budi Santoso" class="w-12 h-12 rounded-full" />
+                        <div>
+                            <h4 class="font-orbitron font-bold">Budi Santoso</h4>
+                            <div class="flex text-accent">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary">"Top-up PUBG Mobile cuma 3 menit udah masuk. CS nya juga responsif banget di WhatsApp. Mantap!"</p>
+                </div>
+            </div>
+            
+            <!-- Partnership Logos -->
+            <div class="mt-16 text-center" data-aos="fade-up">
+                <h3 class="font-orbitron font-bold text-xl mb-8">Trusted by Game Publishers</h3>
+                <div class="flex justify-center items-center gap-8 flex-wrap opacity-60">
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=100&h=60&fit=crop" alt="Moonton" class="h-12" />
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=100&h=60&fit=crop" alt="Tencent" class="h-12" />
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=100&h=60&fit=crop" alt="Garena" class="h-12" />
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=100&h=60&fit=crop" alt="miHoYo" class="h-12" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order-form" class="py-20 bg-background">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="font-orbitron font-bold text-3xl md:text-4xl text-center mb-16" data-aos="fade-up">
+                Order Your <span class="text-primary">Top-Up</span> Now
+            </h2>
+            
+            <form class="card-gaming space-y-6" data-aos="fade-up" data-aos-delay="200" onsubmit="submitOrder(event)">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Pilih Game</label>
+                    <select id="game-select" class="form-field w-full" onchange="showGameIdField()" required>
+                        <option value>Pilih Game</option>
+                        <option value="mobile-legends">Mobile Legends</option>
+                        <option value="pubg-mobile">PUBG Mobile</option>
+                        <option value="free-fire">Free Fire</option>
+                        <option value="genshin-impact">Genshin Impact</option>
+                    </select>
+                </div>
+                
+                <div id="game-id-field" class="hidden">
+                    <label class="block text-sm font-medium mb-2">Game ID</label>
+                    <input type="text" id="game-id" class="form-field w-full" placeholder="Masukkan Game ID Anda" />
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium mb-2">Nama</label>
+                    <input type="text" id="customer-name" class="form-field w-full" placeholder="Nama lengkap Anda" required />
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium mb-2">Nomor WhatsApp</label>
+                    <input type="tel" id="whatsapp-number" class="form-field w-full" placeholder="08xxxxxxxxxx" required />
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium mb-2">Pilih Package</label>
+                    <select id="package-select" class="form-field w-full" required>
+                        <option value>Pilih Package</option>
+                        <option value="86-diamonds-20000">86 Diamonds - Rp 20.000</option>
+                        <option value="172-diamonds-40000">172 Diamonds - Rp 40.000</option>
+                        <option value="257-diamonds-60000">257 Diamonds - Rp 60.000</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium mb-2">Metode Pembayaran</label>
+                    <div class="grid grid-cols-2 gap-4">
+                        <label class="flex items-center p-3 border border-field rounded-lg cursor-pointer hover:border-primary transition-colors">
+                            <input type="radio" name="payment" value="gopay" class="mr-3" />
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=30&h=20&fit=crop" alt="GoPay" class="w-8 h-5 mr-2" />
+                            GoPay
+                        </label>
+                        <label class="flex items-center p-3 border border-field rounded-lg cursor-pointer hover:border-primary transition-colors">
+                            <input type="radio" name="payment" value="ovo" class="mr-3" />
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=30&h=20&fit=crop" alt="OVO" class="w-8 h-5 mr-2" />
+                            OVO
+                        </label>
+                        <label class="flex items-center p-3 border border-field rounded-lg cursor-pointer hover:border-primary transition-colors">
+                            <input type="radio" name="payment" value="dana" class="mr-3" />
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=30&h=20&fit=crop" alt="DANA" class="w-8 h-5 mr-2" />
+                            DANA
+                        </label>
+                        <label class="flex items-center p-3 border border-field rounded-lg cursor-pointer hover:border-primary transition-colors">
+                            <input type="radio" name="payment" value="bank" class="mr-3" />
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=30&h=20&fit=crop" alt="Bank" class="w-8 h-5 mr-2" />
+                            Bank Transfer
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="w-full btn-cta text-lg py-4 flex items-center justify-center gap-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-6 h-6" />
+                    Order via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-surface">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="font-orbitron font-bold text-3xl md:text-4xl text-center mb-16" data-aos="fade-up">
+                Frequently Asked <span class="text-accent">Questions</span>
+            </h2>
+            
+            <div class="space-y-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-gaming">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="font-orbitron font-bold text-lg">Berapa lama proses pengiriman?</h3>
+                        <svg class="w-6 h-6 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4 text-text-secondary">
+                        <p>Proses pengiriman biasanya memakan waktu 2-5 menit setelah pembayaran dikonfirmasi. Kami menjamin pengiriman dalam waktu maksimal 15 menit.</p>
+                    </div>
+                </div>
+                
+                <div class="card-gaming">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="font-orbitron font-bold text-lg">Apakah transaksi aman?</h3>
+                        <svg class="w-6 h-6 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4 text-text-secondary">
+                        <p>Ya, semua transaksi dilindungi dengan enkripsi tingkat bank. Kami tidak menyimpan informasi kartu kredit atau data pembayaran sensitif lainnya.</p>
+                    </div>
+                </div>
+                
+                <div class="card-gaming">
+                    <button class="w-full text-left flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <h3 class="font-orbitron font-bold text-lg">Bagaimana jika pesanan gagal?</h3>
+                        <svg class="w-6 h-6 transform transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden mt-4 text-text-secondary">
+                        <p>Jika pesanan gagal, kami akan mengembalikan 100% uang Anda dalam waktu 24 jam. Tim customer service kami siap membantu melalui WhatsApp 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section id="guarantee" class="py-20 bg-secondary">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto" data-aos="fade-up">
+                <div class="w-20 h-20 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-8">
+                    <svg class="w-10 h-10 text-background" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                
+                <h2 class="font-orbitron font-bold text-3xl md:text-4xl mb-6">
+                    100% <span class="text-accent">Money Back Guarantee</span>
+                </h2>
+                
+                <p class="text-lg text-text-secondary mb-8">
+                    Jika pesanan Anda tidak berhasil dalam waktu 15 menit, kami akan mengembalikan 100% uang Anda tanpa pertanyaan. Itulah komitmen kami untuk kepuasan pelanggan.
+                </p>
+                
+                <!-- Limited Time Offer -->
+                <div class="bg-gradient-to-r from-warning to-error rounded-lg p-6 mb-8">
+                    <h3 class="font-orbitron font-bold text-xl mb-2">🔥 Promo Terbatas!</h3>
+                    <p class="mb-4">Dapatkan diskon 20% untuk pembelian pertama Anda!</p>
+                    <div class="flex justify-center items-center gap-2 text-2xl font-bold">
+                        <span>Berakhir dalam:</span>
+                        <div id="countdown" class="text-accent">23:59:45</div>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/6281234567890?text=Halo%20GameTopUp%20Pro%2C%20saya%20ingin%20menggunakan%20promo%20diskon%2020%25" class="btn-cta text-lg px-8 py-4 inline-flex items-center gap-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-6 h-6" />
+                    Claim Promo Sekarang!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Metrics -->
+    <section id="metrics" class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-orbitron font-bold text-primary mb-2 counter-animation">50K+</div>
+                    <div class="text-text-secondary">Happy Customers</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-orbitron font-bold text-accent mb-2 counter-animation">99.9%</div>
+                    <div class="text-text-secondary">Success Rate</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-orbitron font-bold text-primary mb-2 counter-animation">24/7</div>
+                    <div class="text-text-secondary">Customer Support</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-4xl font-orbitron font-bold text-accent mb-2 counter-animation">3 Years</div>
+                    <div class="text-text-secondary">Trusted Service</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-orbitron font-bold text-xl mb-4 text-accent">GameTopUp Pro</h3>
+                    <p class="text-text-secondary mb-4">Platform top-up game credits terpercaya dengan pengiriman instan dan harga terbaik di Indonesia.</p>
+                    <div class="flex gap-4">
+                        <a href="https://wa.me/6281234567890" class="text-accent hover:text-primary transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-orbitron font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Game Credits</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Mobile Pulsa</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Digital Vouchers</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Gift Cards</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-orbitron font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Order Status</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-primary transition-colors">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-orbitron font-bold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-text-secondary">
+                        <p>📱 WhatsApp: +62 812-3456-7890</p>
+                        <p>📧 Email: support@gametopuppro.com</p>
+                        <p>🕒 24/7 Customer Support</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-surface-700 mt-8 pt-8 text-center text-text-secondary">
+                <p>&copy; 2025 GameTopUp Pro. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20GameTopUp%20Pro%2C%20saya%20butuh%20bantuan" class="sticky-whatsapp btn-cta rounded-full p-4 shadow-lg">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-8 h-8" />
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Pricing Category Switching
+        function switchCategory(category) {
+            // Hide all categories
+            document.querySelectorAll('.pricing-category').forEach(cat => {
+                cat.classList.add('hidden');
+            });
+            
+            // Show selected category
+            document.getElementById(category).classList.remove('hidden');
+            
+            // Update tab styles
+            document.querySelectorAll('.pricing-tab').forEach(tab => {
+                tab.classList.remove('active');
+                tab.classList.add('text-text-secondary');
+            });
+            
+            event.target.classList.add('active');
+            event.target.classList.remove('text-text-secondary');
+        }
+
+        // Game Selection
+        function selectGame(gameName) {
+            document.getElementById('game-select').value = gameName.toLowerCase().replace(' ', '-');
+            showGameIdField();
+            document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Show Game ID Field
+        function showGameIdField() {
+            const gameSelect = document.getElementById('game-select');
+            const gameIdField = document.getElementById('game-id-field');
+            
+            if (gameSelect.value) {
+                gameIdField.classList.remove('hidden');
+            } else {
+                gameIdField.classList.add('hidden');
+            }
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Form Submission
+        function submitOrder(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const game = document.getElementById('game-select').value;
+            const gameId = document.getElementById('game-id').value;
+            const name = document.getElementById('customer-name').value;
+            const whatsapp = document.getElementById('whatsapp-number').value;
+            const package = document.getElementById('package-select').value;
+            const payment = formData.get('payment');
+            
+            const message = `Halo GameTopUp Pro!
+
+Saya ingin melakukan top-up dengan detail berikut:
+
+👤 Nama: ${name}
+🎮 Game: ${game}
+🆔 Game ID: ${gameId}
+📦 Package: ${package}
+💳 Pembayaran: ${payment}
+📱 WhatsApp: ${whatsapp}
+
+Mohon diproses segera. Terima kasih!`;
+            
+            const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Countdown Timer
+        function startCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            let timeLeft = 24 * 60 * 60; // 24 hours in seconds
+            
+            const timer = setInterval(() => {
+                const hours = Math.floor(timeLeft / 3600);
+                const minutes = Math.floor((timeLeft % 3600) / 60);
+                const seconds = timeLeft % 60;
+                
+                countdownElement.textContent = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                timeLeft--;
+                
+                if (timeLeft < 0) {
+                    clearInterval(timer);
+                    countdownElement.textContent = '00:00:00';
+                }
+            }, 1000);
+        }
+
+        // Start countdown when page loads
+        document.addEventListener('DOMContentLoaded', startCountdown);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form data persistence
+        function saveFormData() {
+            const formData = {
+                game: document.getElementById('game-select').value,
+                gameId: document.getElementById('game-id').value,
+                name: document.getElementById('customer-name').value,
+                whatsapp: document.getElementById('whatsapp-number').value,
+                package: document.getElementById('package-select').value
+            };
+            localStorage.setItem('gameTopUpFormData', JSON.stringify(formData));
+        }
+
+        function loadFormData() {
+            const savedData = localStorage.getItem('gameTopUpFormData');
+            if (savedData) {
+                const formData = JSON.parse(savedData);
+                document.getElementById('game-select').value = formData.game || '';
+                document.getElementById('game-id').value = formData.gameId || '';
+                document.getElementById('customer-name').value = formData.name || '';
+                document.getElementById('whatsapp-number').value = formData.whatsapp || '';
+                document.getElementById('package-select').value = formData.package || '';
+                
+                if (formData.game) {
+                    showGameIdField();
+                }
+            }
+        }
+
+        // Save form data on input
+        document.addEventListener('DOMContentLoaded', () => {
+            loadFormData();
+            
+            const formInputs = document.querySelectorAll('#order-form input, #order-form select');
+            formInputs.forEach(input => {
+                input.addEventListener('change', saveFormData);
+                input.addEventListener('input', saveFormData);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
